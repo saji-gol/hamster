@@ -107,10 +107,6 @@ def req1():
 
         if response.status_code == 200:
             data = response.json()
-            '''
-            with open('config.json', 'w') as f:
-                json.dump(response.json(), f, indent=4)
-            '''
             
             if 'dailyCipher' in data and 'cipher' in data['dailyCipher']:
                 cipher = data['dailyCipher']['cipher']
