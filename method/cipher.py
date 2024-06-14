@@ -158,7 +158,7 @@ if flag:
     print('----------------------\n')
 
     if not is_clamed:
-        flag = clame(cipher)
+        flag = clame(text)
         if flag:
             print('\ndaily morse is clamed now.')
         else:
