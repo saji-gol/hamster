@@ -50,7 +50,7 @@ def morse_to_text(morse):
 def clame(cipher):
     flag = True
 
-    url = "https://api.hamsterkombat.io/clicker/claim-daily-cipher"
+    url = "https://api.hamsterkombatgame.io/clicker/claim-daily-cipher"
     headers = {
         "User-Agent": personal_data.user_agent,
         "Accept": "application/json",
@@ -65,7 +65,6 @@ def clame(cipher):
         "Pragma": "no-cache",
         "Cache-Control": "no-cache"
     }
-    referrer = "https://hamsterkombat.io/"
     body = {
         "cipher": cipher
     }
@@ -83,7 +82,7 @@ def clame(cipher):
         return flag
 
 def req1():
-    url = "https://api.hamsterkombat.io/clicker/config"
+    url = "https://api.hamsterkombatgame.io/clicker/config"
 
     headers = {
         "User-Agent": personal_data.user_agent,

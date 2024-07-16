@@ -8,7 +8,7 @@ def sync():
     flag = True
     my = {}
 
-    url = "https://api.hamsterkombat.io/clicker/sync"
+    url = "https://api.hamsterkombatgame.io/clicker/sync"
 
     headers = {
         "User-Agent": personal_data.user_agent,
@@ -22,7 +22,6 @@ def sync():
         "Priority": "u=4",
         "Pragma": "no-cache",
         "Cache-Control": "no-cache",
-        "Referer": "https://hamsterkombat.io/"
     }
 
     try:
@@ -62,7 +61,7 @@ def tap():
     my = {}
 
     if status:
-        url = "https://api.hamsterkombat.io/clicker/tap"
+        url = "https://api.hamsterkombatgame.io/clicker/tap"
         available = d['availableTaps']
         pertap = d['earn_per_tap']
         recoverpersec = d['tap_recovery_per_sec']
